@@ -3,7 +3,13 @@ const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const allowedOrigins = ['http://localhost:3000', 'http://localhost:3002', 'http://192.168.18.252:3002', 'http://172.17.224.1:3002/'];
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://localhost:3002',
+  'http://192.168.18.252:3002',
+  'http://172.17.224.1:3002',
+  'https://grocery-store-ecommerce-axw5.vercel.app'
+];
 
 dotenv.config();
 
